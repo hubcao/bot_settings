@@ -432,12 +432,17 @@ if (isset($_GET['edit']) && !empty($_GET['edit'])) {
                 <div class="form-group">
                     <label for="edit_pid">商户ID</label>
                     <input type="text" id="edit_pid" name="pid" value="<?php echo htmlspecialchars($editConfig['pid']); ?>" required>
-                    <div class="form-hint">开户地址: <a href="http://juea.cn/" target="_blank" class="hint-link">http://juea.cn/</a></div>
                 </div>
                 <div class="form-group">
                     <label for="edit_md5">商户MD5密钥</label>
                     <input type="text" id="edit_md5" name="md5" value="<?php echo htmlspecialchars($editConfig['md5']); ?>" required>
                 </div>
+                
+                <div class="form-group">
+                    <label>商户收款查看</label>
+                    <div class="form-hint">商户用户地址: <a href="https://www.paypaynow.net/user" target="_blank" class="hint-link">https://www.paypaynow.net/user</a></div>
+                </div>
+                
                 <div class="modal-buttons">
                     <a href="pay.php?page=<?php echo $currentPage; ?>" class="cancel-btn">取消</a>
                     <button type="submit" class="save-btn" name="edit_pay">保存</button>
