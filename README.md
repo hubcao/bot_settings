@@ -49,6 +49,9 @@ define('DB_PASS', '密码');
 执行周期：N分钟 + 30分钟
 URL地址：/web site/api/jiance.php
 开启进程锁：勾选开启
+
+原生定时：
+*/30 * * * * /usr/bin/php '/web site/api/jiance.php' >> /tmp/jiance.log 2>&1
 ```
 
 然后启动机器人即可完成了
