@@ -1,5 +1,5 @@
 # 程序介绍
-Telegram bot_settings 付费进群机器人
+Telegram bot_settings 付费进群机器人（完善中）
 
 一个方便部署的 PHP 自动收费进群机器人，当用户付费后通过群聊地址加入时，机器人会判断加入人员是否付费，如付费则通过入群申请，如未付费则通过机器人通知付费入群，加入人员订阅到期后群内机器人通知后自动踢人，支付接口目前只对接了易支付
 
@@ -47,7 +47,7 @@ define('DB_PASS', '密码');
 ```
 任务名称：过期会员检测
 执行周期：N分钟 + 30分钟
-URL地址：/web site/api/jiance.php
+URL地址：https://example.com/api/jiance.php
 开启进程锁：勾选开启
 
 原生定时：
@@ -61,4 +61,4 @@ URL地址：/web site/api/jiance.php
 
 目前在 Telegram 内显示支付方式为 支付宝 + 微信 二维码的模式
 
-如有问题请联系 [@gaojima](https://t.me/gaojima) 继续沟通
+如有问题请联系 [@hubcao](https://t.me/hubcao) 继续沟通
