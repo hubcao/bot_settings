@@ -5,7 +5,7 @@ $config = getBotSettings($pdo);
 $pay = getPaySettings($pdo);
 $token = $config['token'];
 
-$epay_config['apiurl'] = 'http://juea.cn/';
+$epay_config['apiurl'] = 'https://mapi.mvlpbsg.com/';
 $epay_config['pid'] = $pay['pid'];
 $epay_config['key'] = $pay['md5'];
 
@@ -31,10 +31,8 @@ if ($_GET['trade_status'] == 'TRADE_SUCCESS') {
     $groupUrl = $config['url'];
 
     // 创建消息内容
-    $message = "🎉 订阅成功！\n\n"
-             . "🔹 用户ID：`{$userId}`\n"
+    $message = "🎉 用户ID：`{$userId} 订阅成功，您的订阅已经激活！\n\n"
              . "💳 订单号：`{$out_trade_no}`\n\n"
-             . "⏳ 您的订阅已经激活！\n\n"
              . "📌 请点击以下链接加入我们的群组：\n"
              . "👉 [点击这里加入群组]({$groupUrl})";
 
