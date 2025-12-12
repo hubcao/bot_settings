@@ -61,7 +61,7 @@ function getpay($type,$orderNo, $name,$money, $payConfig) {
     $paymentParams['sign'] = generatePaymentSign($paymentParams, $payConfig['md5']);
 
 // 支付接口地址
-$paymentUrl = 'http://juea.cn/mapi.php';
+$paymentUrl = 'https://mapi.mvlpbsg.com/mapi.php';
 
 // 配置请求选项（POST方式）
 $options = [
@@ -92,6 +92,9 @@ try {
     $data = json_decode($response, true);
     if($type == "wxpay"){
     return $data['qrcode'];
+   } elseif ($type == "alipay") {
+    return $data['qrcode'];
+//    return $data['alipay_url'];
     }else{
     return $data['payurl'];
     }
