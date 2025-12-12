@@ -1,9 +1,9 @@
 <?php
 // 数据库配置
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'cs');
-define('DB_USER', 'cs');
-define('DB_PASS', 'z7J2B6G8hAEmxTYK');
+define('DB_NAME', '库名');
+define('DB_USER', '用户');
+define('DB_PASS', '密码');
 
 // 连接数据库
 try {
