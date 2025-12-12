@@ -405,7 +405,7 @@ if (isset($update['chat_join_request'])) {
         ]));
 
         // 发送拒绝原因的私聊消息
-        $rejectMsg = "抱歉，您的加入申请被拒绝。\n\n原因：您还未购买服务。\n\n请使用 /get_package 命令购买套餐，或联系管理员。";
+        $rejectMsg = "抱歉，您的加入申请被拒绝。\n\n原因：您还未购买服务。\n\n请使用 /start 命令购买套餐，或联系管理员。";
         @file_get_contents($url . "sendMessage?" . http_build_query([
             'chat_id' => $userId,
             'text' => $rejectMsg
