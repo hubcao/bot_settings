@@ -3,10 +3,6 @@ Telegram bot_settings 付费进群机器人
 
 一个方便部署的 PHP 自动收费进群机器人，当用户付费后通过群聊地址加入时，机器人会判断加入人员是否付费，如付费则通过入群申请，如未付费则通过机器人通知付费入群，加入人员订阅到期后群内机器人通知后自动踢人，支付接口目前只对接了易支付
 
-![欢迎语](https://github.com/hubcao/bot_settings/blob/main/img/huanying.png)
-![支付流程](https://github.com/hubcao/bot_settings/blob/main/img/zhifu.png)
-![未支付](https://github.com/hubcao/bot_settings/blob/main/img/weitongguo.png)
-
 # 程序特性
 1、使用易支付通用接口
 
@@ -58,7 +54,7 @@ URL地址：https://example.com/api/jiance.php
 */30 * * * * /usr/bin/php '/web site/api/jiance.php' >> /tmp/jiance.log 2>&1
 ```
 
-然后启动机器人即可完成了
+然后启动机器人 /api/set-webhook.php 即可完成了
 
 # 支付说明
 使用通用易支付接口 [paypaynow](https://www.paypaynow.net/doc.html) 可前去进行开户
