@@ -61,4 +61,15 @@ URL地址：https://example.com/api/jiance.php
 
 目前在 Telegram 内显示支付方式为 支付宝 + 微信 二维码的模式
 
+# 补充说明
+如需要自行接入其他的易支付平台，可修改 /api/pay.php 、 /api/notify.php 文件
+第三方易支付接口良莠不齐，有的支持二维码，有的不支持，甚至有的无法返回消息，请自行修改文件
+
 如有问题请联系 [@hubcao](https://t.me/hubcao) 继续沟通
+
+# 广而告之
+1、机场 [大哥云](https://aff02.dgy02.com/#/register?code=PPJn00bx) 
+  提供一天免费试用，满意后再付款购买，原生IP所有套餐均支持 Netflix、TVB、TikTok 等国外流媒体解锁
+
+2、服务器 [SiliCloud](https://www.silicloud.com/zh/activity/vps/) 
+  主打 日本、美国 CN2 服务器，支持纯 IPV6 服务器，价格便宜长久稳定
