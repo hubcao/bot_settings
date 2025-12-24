@@ -33,7 +33,8 @@ if (isset($update['message'])) {
                 $photoUrl = $config['jqr'];
             } else {
                 // 使用随机占位图，管理员可在控制面板中把可用图片 URL 填入 `jqr` 字段以替换
-                $photoUrl = 'https://wdnas.me/img/photo.png';
+				// 如出现无法显示图片，请使用网络图片，如：https://xxxx.com/img/photo.png
+                $photoUrl = '/img/photo.png';
             }
 
 			$reply = "您好 {$firstName} 「您的关联ID：{$userId}」，欢迎光临本店\n\n".
@@ -353,9 +354,7 @@ if ($data === 'cancel') {
 
     $messageId = $callback['message']['message_id'];
 
-
     $reply = "❌ 您已取消购买操作。";
-
 
     file_get_contents($url . "sendMessage?" . http_build_query([
         'chat_id' => $chatId,
