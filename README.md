@@ -64,5 +64,3 @@ URL地址：https://example.com/api/jiance.php
 # 补充说明
 如需要自行接入其他的易支付平台，可修改 /api/pay.php 、 /api/notify.php 文件
 第三方易支付接口良莠不齐，有的支持二维码，有的不支持，甚至有的无法返回消息，请自行修改文件
-
-不提供任何免费技术支持，如有付费咨询（10USD）需求请联系 [@hubcao](https://t.me/hubcao) 
